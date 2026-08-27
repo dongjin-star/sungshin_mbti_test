@@ -120,8 +120,12 @@ a {
 }
 
 .nav-links a {
-  display: inline-block;
-  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 500;
@@ -140,8 +144,8 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
   border-radius: 50%;
   border: 1.5px solid var(--border);
@@ -264,6 +268,22 @@ a {
   .nav-wrap {
     justify-content: center;
     text-align: center;
+  }
+  .nav-right {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-links a {
+    flex-shrink: 0;
   }
   .hero {
     padding: 44px 20px 32px;
