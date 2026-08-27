@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>SP 탐험가형 공부법 | MBTI 공부법 연구소</title>
 <meta name="description" content="ISTP, ISFP, ESTP, ESFP 탐험가형(SP)을 위한 공부법과 시험 꿀팁." />
+<script>
+(function(){try{var t=localStorage.getItem("theme");if(!t){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/components.css" />
 </head>
@@ -13,14 +16,19 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a href="index.html" class="logo">MBTI 공부법 연구소</a>
-    <ul class="nav-links">
-      <li><a href="index.html">홈</a></li>
-      <li><a href="nt.html">NT 분석가</a></li>
-      <li><a href="nf.html">NF 외교관</a></li>
-      <li><a href="sj.html">SJ 관리자</a></li>
-      <li><a href="sp.html" class="active">SP 탐험가</a></li>
-      <li><a href="test.html">자가진단</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="nt.html">NT 분석가</a></li>
+        <li><a href="nf.html">NF 외교관</a></li>
+        <li><a href="sj.html">SJ 관리자</a></li>
+        <li><a href="sp.html" class="active">SP 탐험가</a></li>
+        <li><a href="test.html">자가진단</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="다크 모드로 전환">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -126,5 +134,6 @@
   <p>MBTI 공부법 연구소 · 이 콘텐츠는 재미와 학습 동기 부여를 위한 자가진단이며, 공식 심리 검사가 아닙니다.</p>
 </footer>
 
+<script src="js/theme.js"></script>
 </body>
 </html>
