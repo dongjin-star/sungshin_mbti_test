@@ -25,4 +25,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://dongjin-star.github.io/sungshin_mbti_test/sitemap.xml
+Sitemap: https://sungshin-mbti-test.vercel.app/sitemap.xml
