@@ -104,6 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const { scores, topGroup } = calculateResult(form);
     lastTopGroup = topGroup;
     renderResult(scores, topGroup);
+
+    if (typeof gtag === "function") {
+      gtag("event", "text_complete", { group: topGroup });
+    }
   });
 
   document.getElementById("share-btn").addEventListener("click", () => {
